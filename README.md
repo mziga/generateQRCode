@@ -1,9 +1,10 @@
-	# generateQRCode
+# generateQRCode for Salesforce.com	
+	# generateQRCode for Salesforce.com
 	# Author: Ziga Makuc
 	# QRCode generator by Jeromee Tienne	
 	# Date: 4th of February, 2015
 	# Version: 1.0
-	# generateQRCode for Salesforce.com
+	
 
 1. Create Visualforce Page caled "generateQRCode"
 2. Add Static Resource called "jQuery" and put file "jQuery-2.1.4.min.js" in it
