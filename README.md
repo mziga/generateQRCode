@@ -19,6 +19,7 @@
 		&nbsp;&nbsp;&nbsp;&nbsp;h [number, in px],<br />
 		&nbsp;&nbsp;&nbsp;&nbsp;showName [null/1-shows name on top],<br />
 
+#Upcoming updates and suggestions
 Suggestions: You can incorporate QRCode in any VF Page (or site - be sure to select public availability for static resource) or use it in Account (or other object, if modified) as add-on to page layout.
 
-Comments: PDF generation currently not supported; will be released in next version.
+Upcoming updates: PDF generation currently not supported; will be released in next version.
