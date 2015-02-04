@@ -1,0 +1,36 @@
+<!--
+	# generateQRCode
+	# Author: Ziga Makuc
+	# QRCode generator by Jeromee Tienne	
+	# Date: 4th of February, 2015
+	# Version: 1.0
+	# generateQRCode for Salesforce.com
+	
+-->
+<apex:page showHeader="false" standardController="Account"> 
+    <apex:includeScript value="{!$Resource.jQuery}"/>
+    <apex:includeScript value="{!$Resource.JavaScriptQRCode}"/>
+
+    <style>
+        .qr{
+            margin:0 auto;width:{!IF($CurrentPage.parameters.w!="", $CurrentPage.parameters.w, 150)}px;
+        }    
+    </style>
+    <apex:outputText rendered="{!IF($CurrentPage.parameters.showName=="1", true, false)}" value="{!$CurrentPage.parameters.txt}{!Account.Name}"/>
+
+    <br/><br/>
+
+    <div class="qr" id="QRCodeOutput"></div>
+    <script>
+
+        jQuery(function(){
+            jQuery('#QRCodeOutput').qrcode({
+                render : "{!$CurrentPage.parameters.type}", // "canvas" or "table" (default)
+                text : "{!IF($CurrentPage.parameters.txt!="", $CurrentPage.parameters.txt, Account.Name)}",
+                width : "{!IF($CurrentPage.parameters.w!="", $CurrentPage.parameters.w, 150)}",
+                height : "{!IF($CurrentPage.parameters.h!="", $CurrentPage.parameters.h, 150)}"
+            }); 
+        })
+    </script>
+
+</apex:page>
