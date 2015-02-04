@@ -1,7 +1,7 @@
 # generateQRCode for Salesforce.com	
 # How to use it
 
-1. Create Visualforce Page caled "generateQRCode"
+1. Create Visualforce Page called "generateQRCode"
 2. Add Static Resource called "jQuery" and put file "jQuery-2.1.4.min.js" in it
 3. Add Static Resource called "JavaScriptQRCode" and put file "jsqr.js" in it
 4. Open page generateQRCode<br />
