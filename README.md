@@ -11,11 +11,11 @@
 4. Open page generateQRCode
   Option A: Add Id of the Account - it will show the name of the account
   Option B: Add parameters:
-    txt [text that will be shown in QR Code]
-    type [table/canvas]
-    w [number, in px]
-    h [number, in px]
-    showName [null/1-shows name on top]
+    txt [text that will be shown in QR Code],
+    type [table/canvas],
+    w [number, in px],
+    h [number, in px],
+    showName [null/1-shows name on top],
 
 Suggestions: You can incorporate QRCode in any VF Page (or site - be sure to select public availability for static resource) or use it in Account (or other object, if modified) as add-on to page layout.
 
