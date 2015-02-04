@@ -5,7 +5,7 @@
 	# Version: 1.0
 	# generateQRCode for Salesforce.com
 
-1. Create Visualforce Page generateQRCode
+1. Create Visualforce Page caled "generateQRCode"
 2. Add Static Resource called "jQuery" and put file "jQuery-2.1.4.min.js" in it
 3. Add Static Resource called "JavaScriptQRCode" and put file "jsqr.js" in it
 4. Open page generateQRCode
@@ -16,5 +16,7 @@
     w [number, in px]
     h [number, in px]
     showName [null/1-shows name on top]
-    
-Comments: Currently not supported for PDF generation; will be release in next version
+
+Suggestions: You can incorporate QRCode in any VF Page (or site - be sure to select public availability for static resource) or use it in Account (or other object, if modified) as add-on to page layout.
+
+Comments: PDF generation currently not supported; will be released in next version.
